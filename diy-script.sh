@@ -8,7 +8,7 @@
 #===============================================
 
 # 修改默认IP
-sed -i 's/192.168.1.1/10.11.12.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/10.220.6.1/g' package/base-files/files/bin/config_generate
 
 #增加风扇调速
 wget -P target/linux/rockchip/armv8/base-files/etc/init.d/ https://github.com/friendlyarm/friendlywrt/raw/master-v19.07.1/target/linux/rockchip-rk3399/base-files/etc/init.d/fa-rk3399-pwmfan
@@ -38,6 +38,8 @@ git clone https://github.com/iwrt/luci-app-ikoolproxy.git package/luci-app-ikool
 git clone https://github.com/esirplayground/luci-app-poweroff package/luci-app-poweroff
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
+git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone https://github.com/zxlhhyccc/luci-app-v2raya package/luci-app-v2raya
 svn co https://github.com/haiibo/packages/trunk/luci-app-advanced package/luci-app-advanced
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-bypass/trunk/luci-app-bypass package/luci-app-bypass
